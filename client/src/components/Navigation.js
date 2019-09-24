@@ -7,7 +7,10 @@ function Navigation() {
   return (
     <div className="navigation-container">
       <Mobile image={nostyling} linkTo={"/no-styling"} />
-      <Mobile image={"https://docs.webix.com/media/desktop/htmlform.png"} />
+      <Mobile
+        image={"https://docs.webix.com/media/desktop/htmlform.png"}
+        linkTo={"/basic-styling"}
+      />
       <Mobile image={"https://docs.webix.com/media/desktop/htmlform.png"} />
       <Mobile image={"https://docs.webix.com/media/desktop/htmlform.png"} />
       {/* <NavLink to="/no-styling">No Styling</NavLink> */}

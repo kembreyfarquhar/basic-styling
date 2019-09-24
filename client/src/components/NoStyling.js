@@ -4,10 +4,11 @@ import { NavLink } from "react-router-dom";
 function NoStyling() {
   return (
     <div>
-      <NavLink to="/">Back</NavLink>
-      <h2>No Styling</h2>
+      <NavLink to="/">Back to Home</NavLink>
+      <h1>No Styling</h1>
       <div className="page">
-        <h1>Welcome Back!</h1>
+        <h2>Welcome Back!</h2>
+        <br />
         <form>
           <label>
             Username:
