@@ -1,0 +1,45 @@
+.navigation-container {
+  .intro {
+    background: darkslategray;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .mobile-all {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .mobile-container {
+      margin: 1rem;
+
+      .mobile {
+        height: 25rem;
+        width: 15rem;
+        background: darkslategray;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .image {
+          height: 75%;
+          width: 85%;
+          border-radius: 10px;
+        }
+
+        .home-button {
+          height: 1.8rem;
+          width: 1.8rem;
+          background: white;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

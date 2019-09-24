@@ -1,19 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../main.css";
+import "../styles/navigation.scss";
 import nostyling from "../images/nostyling.png";
+import basicstyling from "../images/basicstyling.png";
 
 function Navigation() {
   return (
     <div className="navigation-container">
-      <Mobile image={nostyling} linkTo={"/no-styling"} />
-      <Mobile
-        image={"https://docs.webix.com/media/desktop/htmlform.png"}
-        linkTo={"/basic-styling"}
-      />
-      <Mobile image={"https://docs.webix.com/media/desktop/htmlform.png"} />
-      <Mobile image={"https://docs.webix.com/media/desktop/htmlform.png"} />
-      {/* <NavLink to="/no-styling">No Styling</NavLink> */}
+      <div className="intro">Click the desired example to view the code</div>
+      <div className="mobile-all">
+        <Mobile image={nostyling} linkTo={"/no-styling"} />
+        <Mobile image={basicstyling} linkTo={"/basic-styling"} />
+        <Mobile
+          image={"https://docs.webix.com/media/desktop/htmlform.png"}
+          linkTo={"/materialui-basic"}
+        />
+        <Mobile image={"https://docs.webix.com/media/desktop/htmlform.png"} />
+        {/* <NavLink to="/no-styling">No Styling</NavLink> */}
+      </div>
     </div>
   );
 }
