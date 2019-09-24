@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../main.css";
+import nostyling from "../images/nostyling.png";
 
 function Navigation() {
   return (
     <div className="navigation-container">
-      <Mobile
-        image={"https://docs.webix.com/media/desktop/htmlform.png"}
-        linkTo={"/no-styling"}
-      />
+      <Mobile image={nostyling} linkTo={"/no-styling"} />
       <Mobile image={"https://docs.webix.com/media/desktop/htmlform.png"} />
       <Mobile image={"https://docs.webix.com/media/desktop/htmlform.png"} />
       <Mobile image={"https://docs.webix.com/media/desktop/htmlform.png"} />

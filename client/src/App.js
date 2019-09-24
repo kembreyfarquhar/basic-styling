@@ -7,7 +7,6 @@ import NoStyling from "./components/NoStyling";
 function App() {
   return (
     <div>
-      {/* <Navigation /> */}
       <Route exact path="/" component={Navigation} />
       <Route path="/no-styling" component={NoStyling} />
     </div>
