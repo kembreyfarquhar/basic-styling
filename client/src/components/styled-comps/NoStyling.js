@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/global.scss";
+import "../../styles/global.scss";
 
 function NoStyling() {
   return (

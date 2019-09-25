@@ -3,9 +3,9 @@ import { Route } from "react-router-dom";
 import "./styles/global.scss";
 
 import Navigation from "./components/Navigation";
-import NoStyling from "./components/NoStyling";
-import BasicStyling from "./components/BasicStyling";
-import MaterialUIBasic from "./components/MaterialUIBasic";
+import NoStyling from "./components/styled-comps/NoStyling";
+import BasicStyling from "./components/styled-comps/BasicStyling";
+import MaterialUIBasic from "./components/styled-comps/MaterialUIBasic";
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/basicstyling.scss";
-// import "../styles/global.scss";
+import "../../styles/basicstyling.scss";
+import "../../styles/global.scss";
 
 function BasicStyling() {
   return (

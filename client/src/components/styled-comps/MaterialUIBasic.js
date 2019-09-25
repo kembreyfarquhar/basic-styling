@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// import "../styles/basicstyling.scss";
-import "../styles/global.scss";
+import "../../styles/materialuibasic.scss";
+import "../../styles/global.scss";
 import {
   Container,
   TextField,
@@ -13,19 +13,21 @@ import {
 
 function MaterialUIBasic() {
   return (
-    <div className="Main" style={{ fontFamily: "Roboto", textAlign: "center" }}>
+    <div className="Main material-ui-basic">
       <NavLink className="link" to="/">
         Back to Home
       </NavLink>
 
-      <h2>MaterialUI Basic (Default/No Custom Styles)</h2>
+      <h2>MaterialUI Basic</h2>
 
-      <Container style={{ width: "20rem", border: "1px solid black" }}>
+      <Container className="container">
         <h2>Welcome Back!</h2>
 
-        <h4>Log in to ThisApp</h4>
+        <h4>
+          Log in to This<span>App</span>
+        </h4>
 
-        <FormGroup>
+        <FormGroup className="form">
           <div className="username-password">
             <TextField label="Username" type="text" variant="outlined" />
             <TextField label="Password" type="password" variant="outlined" />
@@ -34,22 +36,17 @@ function MaterialUIBasic() {
             label="Remember Me"
             control={<Checkbox color="primary" />}
           />
-          <Button color="primary" variant="contained">
+          <Button
+            className="login-button"
+            fullWidth
+            size="large"
+            color="primary"
+            variant="contained"
+          >
             Login
           </Button>
         </FormGroup>
       </Container>
-
-      {/* <div className="login-box">
-
-          <label className="check">
-            Remember Me
-            <input type="checkbox" />
-          </label>
-
-          <button type="submit">Login</button>
-        </form>
-      </div> */}
     </div>
   );
 }
