@@ -3,15 +3,15 @@ import { NavLink } from "react-router-dom";
 import "../../styles/basicstyling.scss";
 import "../../styles/global.scss";
 
+import CodeData from "../CodeData";
+
 function BasicStyling() {
   return (
     <div className="basic-styling-container Main">
       <NavLink className="link" to="/">
         Back to Home
       </NavLink>
-
       <h2>Basic Styling</h2>
-
       <div className="login-box">
         <h2>Welcome Back!</h2>
 
@@ -31,6 +31,14 @@ function BasicStyling() {
           <button type="submit">Login</button>
         </form>
       </div>
+      <CodeData
+        url={
+          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/components/styled-comps/BasicStyling.js"
+        }
+        styles={
+          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/styles/basicstyling.scss"
+        }
+      />
     </div>
   );
 }

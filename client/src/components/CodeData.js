@@ -1,40 +1,112 @@
-//get request for the data,
-//accepting props to dynamically set the correct URL
-//set the data in state, render the data in the return
-
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { MenuItem, Select } from "@material-ui/core";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import {
+  atomDark,
+  dark,
+  coy,
+  okaidia,
+  solarizedlight,
+  tomorrow,
+  twilight,
+  prism,
+  darcula,
+  hopscotch,
+  vs,
+  xonokai
+} from "react-syntax-highlighter/dist/esm/styles/prism";
+import "../styles/codedata.scss";
 
 function CodeData(props) {
-  const [data, setData] = useState();
-  console.log(props.url);
+  const [jsxData, setJsxData] = useState();
+  const [sassData, setSassData] = useState();
+  const [jsxStyle, setJsxStyle] = useState(atomDark);
+  const [sassStyle, setSassStyle] = useState(atomDark);
 
   useEffect(() => {
     axios
       .get(props.url)
       .then(res => {
-        setData(res.data);
-        console.log(res.data);
+        setJsxData(res.data);
       })
       .catch(err => console.log(err));
   }, []);
 
+  if (props.styles) {
+    axios
+      .get(props.styles)
+      .then(res => {
+        setSassData(res.data);
+      })
+      .catch(err => console.log(err));
+  }
+
   return (
-    <>
-      <h1>CODE DATA</h1>
-      {data && (
-        <pre
-          style={{
-            wordWrap: "break-word",
-            whiteSpace: "pre-wrap",
-            display: "block",
-            fontFamily: "monospace"
-          }}
+    <div className="codedata-container">
+      <div className="box">
+        <h1>JSX Code:</h1>
+        <Select
+          variant="outlined"
+          value={jsxStyle}
+          onChange={e => setJsxStyle(e.target.value)}
         >
-          {data}
-        </pre>
+          <MenuItem value={atomDark}>AtomDark</MenuItem>
+          <MenuItem value={coy}>Coy</MenuItem>
+          <MenuItem value={okaidia}>Okaidia</MenuItem>
+          <MenuItem value={solarizedlight}>Solarizedlight</MenuItem>
+          <MenuItem value={tomorrow}>Tomorrow</MenuItem>
+          <MenuItem value={twilight}>Twilight</MenuItem>
+          <MenuItem value={prism}>Prism</MenuItem>
+          <MenuItem value={dark}>Dark</MenuItem>
+          <MenuItem value={darcula}>Darcula</MenuItem>
+          <MenuItem value={hopscotch}>Hopscotch</MenuItem>
+          <MenuItem value={vs}>VS</MenuItem>
+          <MenuItem value={xonokai}>Xonokai</MenuItem>
+        </Select>
+        {jsxData && (
+          <SyntaxHighlighter
+            className="code-box"
+            language="jsx"
+            style={jsxStyle}
+          >
+            {jsxData}
+          </SyntaxHighlighter>
+        )}
+      </div>
+      {props.styles && (
+        <div className="box">
+          <h1>SASS Code:</h1>
+          <Select
+            variant="outlined"
+            value={sassStyle}
+            onChange={e => setSassStyle(e.target.value)}
+          >
+            <MenuItem value={atomDark}>AtomDark</MenuItem>
+            <MenuItem value={coy}>Coy</MenuItem>
+            <MenuItem value={okaidia}>Okaidia</MenuItem>
+            <MenuItem value={solarizedlight}>Solarizedlight</MenuItem>
+            <MenuItem value={tomorrow}>Tomorrow</MenuItem>
+            <MenuItem value={twilight}>Twilight</MenuItem>
+            <MenuItem value={prism}>Prism</MenuItem>
+            <MenuItem value={dark}>Dark</MenuItem>
+            <MenuItem value={darcula}>Darcula</MenuItem>
+            <MenuItem value={hopscotch}>Hopscotch</MenuItem>
+            <MenuItem value={vs}>VS</MenuItem>
+            <MenuItem value={xonokai}>Xonokai</MenuItem>
+          </Select>
+          {jsxData && (
+            <SyntaxHighlighter
+              className="code-box"
+              language="sass"
+              style={sassStyle}
+            >
+              {sassData}
+            </SyntaxHighlighter>
+          )}
+        </div>
       )}
-    </>
+    </div>
   );
 }
 

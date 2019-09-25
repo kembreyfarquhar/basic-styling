@@ -1,0 +1,19 @@
+.codedata-container {
+  max-width: 100vw;
+  min-width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  .box {
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+
+    .code-box {
+      height: 30rem;
+    }
+  }
+}

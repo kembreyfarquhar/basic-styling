@@ -11,10 +11,11 @@ body {
   }
 }
 
-.page {
+.nostyling-page {
   border: 1px solid black;
   padding: 1rem;
   width: 15rem;
+  height: 20rem;
 }
 
 .link {
@@ -34,9 +35,3 @@ body {
     text-decoration: underline;
   }
 }
-
-// .nostyling {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
