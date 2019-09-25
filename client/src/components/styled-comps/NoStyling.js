@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../../styles/global.scss";
 
+import CodeData from "../CodeData";
+
 function NoStyling() {
   return (
     <div className="Main">
@@ -34,6 +36,11 @@ function NoStyling() {
           <button type="submit">Login</button>
         </form>
       </div>
+      <CodeData
+        url={
+          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/components/styled-comps/NoStyling.js"
+        }
+      />
     </div>
   );
 }
