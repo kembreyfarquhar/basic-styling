@@ -1,0 +1,50 @@
+.navigation-container {
+  min-width: 100vw;
+
+  .intro {
+    background: darkslategray;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+    box-shadow: 0px 1px 5px grey;
+  }
+  .mobile-all {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .mobile-container {
+      margin: 1rem;
+
+      .mobile {
+        height: 25rem;
+        width: 15rem;
+        background: darkslategray;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 4px 4px rgb(34, 34, 34), 6px 8px 7px rgb(34, 34, 34);
+
+        .image {
+          height: 75%;
+          width: 85%;
+          border-radius: 10px;
+          box-shadow: 1px 1px 3px rgb(34, 34, 34), -1px -1px 3px rgb(34, 34, 34);
+        }
+
+        .home-button {
+          height: 1.8rem;
+          width: 1.8rem;
+          background: white;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
