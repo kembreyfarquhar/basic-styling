@@ -1,10 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../styles/global.scss";
 
 function NoStyling() {
   return (
-    <div>
-      <NavLink to="/">Back to Home</NavLink>
+    <div className="Main">
+      <NavLink className="link" to="/">
+        Back to Home
+      </NavLink>
       <h1>No Styling</h1>
       <div className="page">
         <h2>Welcome Back!</h2>

@@ -9,7 +9,7 @@ import MaterialUIBasic from "./components/MaterialUIBasic";
 
 function App() {
   return (
-    <div className="App">
+    <div className="Main">
       <Route exact path="/" component={Navigation} />
       <Route path="/no-styling" component={NoStyling} />
       <Route path="/basic-styling" component={BasicStyling} />
