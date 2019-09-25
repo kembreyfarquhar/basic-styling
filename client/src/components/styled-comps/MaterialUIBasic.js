@@ -11,6 +11,8 @@ import {
   Button
 } from "@material-ui/core";
 
+import CodeData from "../CodeData";
+
 function MaterialUIBasic() {
   return (
     <div className="Main material-ui-basic">
@@ -47,6 +49,14 @@ function MaterialUIBasic() {
           </Button>
         </FormGroup>
       </Container>
+      <CodeData
+        url={
+          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/components/styled-comps/MaterialUIBasic.js"
+        }
+        styles={
+          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/styles/materialuibasic.scss"
+        }
+      />
     </div>
   );
 }

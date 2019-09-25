@@ -1,7 +1,3 @@
-//get request for the data,
-//accepting props to dynamically set the correct URL
-//set the data in state, render the data in the return
-
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { MenuItem, Select } from "@material-ui/core";
@@ -78,36 +74,38 @@ function CodeData(props) {
           </SyntaxHighlighter>
         )}
       </div>
-      <div className="box">
-        <h1>SASS Code:</h1>
-        <Select
-          variant="outlined"
-          value={sassStyle}
-          onChange={e => setSassStyle(e.target.value)}
-        >
-          <MenuItem value={atomDark}>AtomDark</MenuItem>
-          <MenuItem value={coy}>Coy</MenuItem>
-          <MenuItem value={okaidia}>Okaidia</MenuItem>
-          <MenuItem value={solarizedlight}>Solarizedlight</MenuItem>
-          <MenuItem value={tomorrow}>Tomorrow</MenuItem>
-          <MenuItem value={twilight}>Twilight</MenuItem>
-          <MenuItem value={prism}>Prism</MenuItem>
-          <MenuItem value={dark}>Dark</MenuItem>
-          <MenuItem value={darcula}>Darcula</MenuItem>
-          <MenuItem value={hopscotch}>Hopscotch</MenuItem>
-          <MenuItem value={vs}>VS</MenuItem>
-          <MenuItem value={xonokai}>Xonokai</MenuItem>
-        </Select>
-        {jsxData && (
-          <SyntaxHighlighter
-            className="code-box"
-            language="sass"
-            style={sassStyle}
+      {props.styles && (
+        <div className="box">
+          <h1>SASS Code:</h1>
+          <Select
+            variant="outlined"
+            value={sassStyle}
+            onChange={e => setSassStyle(e.target.value)}
           >
-            {sassData}
-          </SyntaxHighlighter>
-        )}
-      </div>
+            <MenuItem value={atomDark}>AtomDark</MenuItem>
+            <MenuItem value={coy}>Coy</MenuItem>
+            <MenuItem value={okaidia}>Okaidia</MenuItem>
+            <MenuItem value={solarizedlight}>Solarizedlight</MenuItem>
+            <MenuItem value={tomorrow}>Tomorrow</MenuItem>
+            <MenuItem value={twilight}>Twilight</MenuItem>
+            <MenuItem value={prism}>Prism</MenuItem>
+            <MenuItem value={dark}>Dark</MenuItem>
+            <MenuItem value={darcula}>Darcula</MenuItem>
+            <MenuItem value={hopscotch}>Hopscotch</MenuItem>
+            <MenuItem value={vs}>VS</MenuItem>
+            <MenuItem value={xonokai}>Xonokai</MenuItem>
+          </Select>
+          {jsxData && (
+            <SyntaxHighlighter
+              className="code-box"
+              language="sass"
+              style={sassStyle}
+            >
+              {sassData}
+            </SyntaxHighlighter>
+          )}
+        </div>
+      )}
     </div>
   );
 }
