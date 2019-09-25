@@ -40,6 +40,7 @@ function NoStyling() {
         url={
           "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/components/styled-comps/NoStyling.js"
         }
+        styles={false}
       />
     </div>
   );
