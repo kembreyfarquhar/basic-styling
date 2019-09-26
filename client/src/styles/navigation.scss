@@ -31,8 +31,8 @@
         margin: 1rem;
 
         .mobile {
-          height: 25rem;
-          width: 15rem;
+          height: 26rem;
+          width: 16rem;
           background: darkslategray;
           border-radius: 20px;
           display: flex;
@@ -40,6 +40,13 @@
           align-items: center;
           justify-content: space-around;
           box-shadow: 4px 4px rgb(34, 34, 34), 6px 8px 7px rgb(34, 34, 34);
+
+          &:hover {
+            height: 25.7rem;
+            width: 15.7rem;
+            box-shadow: 4px 4px rgb(34, 34, 34), 6px 8px 7px rgb(34, 34, 34),
+              15px 15px 5px palegoldenrod;
+          }
 
           .image {
             height: 75%;
