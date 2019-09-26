@@ -66,4 +66,20 @@
       }
     }
   }
+
+  footer {
+    margin: 4rem 0 2rem 0;
+    text-align: center;
+    font-size: 1rem;
+
+    a {
+      text-decoration: none;
+      margin: 0 0.3rem;
+      color: rgb(34, 106, 214);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
