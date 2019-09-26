@@ -29,6 +29,10 @@ function Navigation() {
           alt={"form styled with basic material-u-i components"}
         />
       </div>
+      <footer>
+        Made by<a href="https://github.com/kmcknight1">Katie McKnight</a>
+        September 2019
+      </footer>
     </div>
   );
 }
