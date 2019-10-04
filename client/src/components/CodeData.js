@@ -5,7 +5,6 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import {
   atomDark,
   dark,
-  coy,
   okaidia,
   solarizedlight,
   tomorrow,
@@ -52,7 +51,6 @@ function CodeData(props) {
           onChange={e => setJsxStyle(e.target.value)}
         >
           <MenuItem value={atomDark}>AtomDark</MenuItem>
-          <MenuItem value={coy}>Coy</MenuItem>
           <MenuItem value={okaidia}>Okaidia</MenuItem>
           <MenuItem value={solarizedlight}>Solarizedlight</MenuItem>
           <MenuItem value={tomorrow}>Tomorrow</MenuItem>
@@ -83,7 +81,6 @@ function CodeData(props) {
             onChange={e => setSassStyle(e.target.value)}
           >
             <MenuItem value={atomDark}>AtomDark</MenuItem>
-            <MenuItem value={coy}>Coy</MenuItem>
             <MenuItem value={okaidia}>Okaidia</MenuItem>
             <MenuItem value={solarizedlight}>Solarizedlight</MenuItem>
             <MenuItem value={tomorrow}>Tomorrow</MenuItem>
