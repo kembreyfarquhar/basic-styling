@@ -9,11 +9,6 @@ import semanticuibasic from "../images/semanticuibasic.png";
 function Navigation() {
   return (
     <div className="navigation-container">
-      {/* <div className="intro">
-        Styling got you down? Check out these basic styling examples to ignite
-        some inspiration 🔥
-      </div> */}
-      <div className="more-info">?</div>
       <div className="mobile-all">
         <Mobile
           title="No Styling"
@@ -22,19 +17,19 @@ function Navigation() {
           alt={"form with no styling"}
         />
         <Mobile
-          title="Basic Styling (SASS)"
+          title="Styling (SASS)"
           image={basicstyling}
           linkTo={"/basic-styling"}
           alt={"form with basic styling"}
         />
         <Mobile
-          title="Basic Material-UI"
+          title="Material-UI"
           image={materialuibasic}
           linkTo={"/materialui-basic"}
           alt={"form styled with basic material-u-i components"}
         />
         <Mobile
-          title="Basic Semantic-UI"
+          title="Semantic-UI"
           image={semanticuibasic}
           linkTo={"/semanticui-basic"}
           alt={"form styled with basic semantic-u-i components"}
