@@ -6,14 +6,17 @@ import Navigation from "./components/Navigation";
 import NoStyling from "./components/styled-comps/NoStyling";
 import BasicStyling from "./components/styled-comps/BasicStyling";
 import MaterialUIBasic from "./components/styled-comps/MaterialUIBasic";
+import SemanticUIBasic from "./components/styled-comps/SemanticUIBasic";
 
 function App() {
+  console.log("React.Component", React.Component);
   return (
     <div className="Main">
       <Route exact path="/" component={Navigation} />
       <Route path="/no-styling" component={NoStyling} />
       <Route path="/basic-styling" component={BasicStyling} />
       <Route path="/materialui-basic" component={MaterialUIBasic} />
+      <Route path="/semanticui-basic" component={SemanticUIBasic} />
     </div>
   );
 }

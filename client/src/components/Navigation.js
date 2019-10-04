@@ -4,11 +4,16 @@ import "../styles/navigation.scss";
 import nostyling from "../images/nostyling.png";
 import basicstyling from "../images/basicstyling.png";
 import materialuibasic from "../images/materialuibasic.png";
+import semanticuibasic from "../images/semanticuibasic.png";
 
 function Navigation() {
   return (
     <div className="navigation-container">
-      <div className="intro">Click the example to view the code 👀</div>
+      {/* <div className="intro">
+        Styling got you down? Check out these basic styling examples to ignite
+        some inspiration 🔥
+      </div> */}
+      <div className="more-info">?</div>
       <div className="mobile-all">
         <Mobile
           title="No Styling"
@@ -28,7 +33,14 @@ function Navigation() {
           linkTo={"/materialui-basic"}
           alt={"form styled with basic material-u-i components"}
         />
+        <Mobile
+          title="Basic Semantic-UI"
+          image={semanticuibasic}
+          linkTo={"/semanticui-basic"}
+          alt={"form styled with basic semantic-u-i components"}
+        />
       </div>
+      <hr />
       <footer>
         Made by<a href="https://github.com/kmcknight1">Katie McKnight</a>
         September 2019

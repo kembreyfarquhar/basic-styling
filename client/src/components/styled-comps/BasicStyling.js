@@ -13,11 +13,11 @@ function BasicStyling() {
       </NavLink>
       <h2>Basic Styling</h2>
       <div className="login-box">
-        <h2>Welcome Back!</h2>
+        <h2 className="welcome-back">Welcome Back!</h2>
 
-        <h4>Log in to ThisApp</h4>
+        <h4 className="login-message">Log in to ThisApp</h4>
 
-        <form>
+        <form className="login-form">
           <div className="username-password">
             <input placeholder="Username" type="text" />
             <input placeholder="Password" type="password" />
@@ -28,7 +28,9 @@ function BasicStyling() {
             <input type="checkbox" />
           </label>
 
-          <button type="submit">Login</button>
+          <button className="submit-button" type="submit">
+            Login
+          </button>
         </form>
       </div>
       <CodeData

@@ -15,21 +15,19 @@ import CodeData from "../CodeData";
 
 function MaterialUIBasic() {
   return (
-    <div className="Main material-ui-basic">
+    <div className="Main materialui-basic-container">
       <NavLink className="link" to="/">
         Back to Home
       </NavLink>
 
-      <h2>MaterialUI Basic</h2>
+      <h2>Material-UI Basic</h2>
 
-      <Container className="container">
-        <h2>Welcome Back!</h2>
+      <Container className="login-box">
+        <h2 className="welcome-back">Welcome Back!</h2>
 
-        <h4>
-          Log in to This<span>App</span>
-        </h4>
+        <h4 className="login-message">Log in to ThisApp</h4>
 
-        <FormGroup className="form">
+        <FormGroup className="login-form">
           <div className="username-password">
             <TextField label="Username" type="text" variant="outlined" />
             <TextField label="Password" type="password" variant="outlined" />
