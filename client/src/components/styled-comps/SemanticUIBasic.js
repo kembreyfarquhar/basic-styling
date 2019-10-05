@@ -60,6 +60,14 @@ function SemanticUIBasic() {
           </Form>
         </div>
       </div>
+      <CodeData
+        url={
+          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/components/styled-comps/SemanticUIBasic.js"
+        }
+        styles={
+          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/styles/semanticuibasic.scss"
+        }
+      />
     </div>
   );
 }
