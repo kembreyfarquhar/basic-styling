@@ -69,7 +69,10 @@ function Navigation() {
       </div>
       <hr />
       <footer>
-        Made by<a href="https://github.com/kmcknight1">Katie McKnight</a>
+        Made by
+        <a href="https://github.com/kmcknight1" target="_blank">
+          Katie McKnight
+        </a>
         September 2019
       </footer>
     </div>
