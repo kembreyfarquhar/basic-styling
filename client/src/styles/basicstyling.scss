@@ -1,15 +1,17 @@
 .basic-styling-container {
-  font-family: Arial, Helvetica, sans-serif;
+  // font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
 
   .login-box {
     border: 1px solid black;
-    height: 24rem;
-    width: 16rem;
+    height: 25rem;
+    width: 18rem;
     display: flex;
     flex-direction: column;
 
-    h2 {
+    .welcome-back {
       margin: 0;
       display: block;
       background: darkslateblue;
@@ -18,24 +20,24 @@
       color: white;
     }
 
-    h4 {
+    .login-message {
       margin: 1.2rem;
       font-size: 1.3rem;
       font-weight: lighter;
     }
 
-    form {
+    .login-form {
       .username-password {
         height: 45%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
         input {
           height: 3rem;
           margin: 0.5rem;
           border-radius: 5px;
-          text-align: center;
+          padding: 1rem;
           border: 0.5px solid rgb(172, 172, 172);
           outline: none;
 
@@ -51,15 +53,16 @@
 
         input {
           cursor: pointer;
+          margin: 0.4rem;
         }
       }
 
-      button {
+      .submit-button {
         background: darkslateblue;
         color: white;
         border-radius: 20px;
         font-size: 0.9rem;
-        font-weight: lighter;
+        font-weight: 100;
         padding: 0.5rem 1.5rem;
         cursor: pointer;
         outline: none;

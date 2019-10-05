@@ -13,9 +13,8 @@ body {
 
 .nostyling-page {
   border: 1px solid black;
-  padding: 1rem;
-  width: 15rem;
-  height: 20rem;
+  padding: 2rem;
+  max-width: 18rem;
 }
 
 .link {
@@ -25,10 +24,9 @@ body {
   font-size: 0.9rem;
   color: rgb(34, 106, 214);
   display: block;
-  width: 6.5rem;
   margin: 1rem;
   border: 1px solid rgb(199, 199, 199);
-  padding: 0.4rem;
+  padding: 0.4rem 1rem;
   border-radius: 20px;
 
   &:hover {
