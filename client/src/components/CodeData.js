@@ -44,7 +44,7 @@ function CodeData(props) {
   return (
     <div className="codedata-container">
       <div className="box">
-        <h1>JSX Code:</h1>
+        <h1>JSX:</h1>
         <Select
           variant="outlined"
           value={jsxStyle}
@@ -74,7 +74,7 @@ function CodeData(props) {
       </div>
       {props.styles && (
         <div className="box">
-          <h1>SASS Code:</h1>
+          <h1>SASS:</h1>
           <Select
             variant="outlined"
             value={sassStyle}
