@@ -8,14 +8,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: whitesmoke;
   }
 }
 
-.nostyling-page {
+.html5-page {
   border: 1px solid black;
   padding: 2rem;
   max-width: 18rem;
   font-family: "Times New Roman", Times, serif;
+  background: white;
 
   h2 {
     font-family: "Times New Roman", Times, serif;
@@ -42,6 +44,7 @@ body {
   border: 1px solid rgb(199, 199, 199);
   padding: 0.4rem 1rem;
   border-radius: 8px;
+  align-self: flex-start;
 
   &:hover {
     color: white;
