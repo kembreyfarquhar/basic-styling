@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "../../styles/materialui.scss";
 import "../../styles/global.scss";
 import {
@@ -16,10 +15,6 @@ import CodeData from "../CodeData";
 function MaterialUI() {
   return (
     <div className="Main materialui-container">
-      <NavLink className="link" to="/">
-        Back to Home
-      </NavLink>
-
       <h2>Material-UI</h2>
 
       <Container className="login-box">

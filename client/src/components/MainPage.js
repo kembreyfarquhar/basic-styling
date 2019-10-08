@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button, Header, Icon, Modal } from "semantic-ui-react";
+import { Button, Header, Modal } from "semantic-ui-react";
 import { Tooltip } from "@material-ui/core";
-import "../styles/navigation.scss";
+import "../styles/mainpage.scss";
 
 import html5 from "../images/html5.png";
 import customsass from "../images/customsass.png";
@@ -45,25 +45,25 @@ function MainPage() {
         <Mobile
           title="HTML5 Default"
           image={html5}
-          linkTo={"/html5"}
+          linkTo={"/views/html-5"}
           alt={"form with no styling"}
         />
         <Mobile
           title="Custom (SASS)"
           image={customsass}
-          linkTo={"/custom-sass"}
+          linkTo={"/views/custom-sass"}
           alt={"form with basic styling"}
         />
         <Mobile
           title="Material-UI"
           image={materialui}
-          linkTo={"/materialui"}
+          linkTo={"/views/material-ui"}
           alt={"form styled with material-ui components"}
         />
         <Mobile
           title="Semantic-UI"
           image={semanticui}
-          linkTo={"/semanticui"}
+          linkTo={"/views/semantic-ui"}
           alt={"form styled with semantic-ui components"}
         />
       </div>

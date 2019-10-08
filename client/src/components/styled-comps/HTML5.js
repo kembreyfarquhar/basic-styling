@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "../../styles/global.scss";
 
 import CodeData from "../CodeData";
@@ -7,9 +6,6 @@ import CodeData from "../CodeData";
 function HTML5() {
   return (
     <div className="Main">
-      <NavLink className="link" to="/">
-        Back to Home
-      </NavLink>
       <h1>HTML5 Default</h1>
       <div className="html5-page">
         <h2>Welcome Back!</h2>
