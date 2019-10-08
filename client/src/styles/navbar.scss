@@ -1,5 +1,5 @@
 .nav-bar {
-  margin: 2rem;
+  margin: 1rem 0 3rem 0;
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -12,6 +12,7 @@
     .back {
       color: white;
       background: rgb(0, 116, 224);
+      border-radius: 8px;
 
       &:hover {
         color: white;
