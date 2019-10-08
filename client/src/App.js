@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 import "./styles/global.scss";
 
 import MainPage from "./components/MainPage";
-import ViewsContainer from "./ViewsContainer";
+import ViewsContainer from "./components/ViewsContainer";
 
 function App() {
   return (

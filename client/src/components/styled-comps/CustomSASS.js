@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "../../styles/customsass.scss";
 import "../../styles/global.scss";
 
@@ -8,9 +7,6 @@ import CodeData from "../CodeData";
 function CustomSASS() {
   return (
     <div className="custom-sass-container Main">
-      <NavLink className="link" to="/">
-        Back to Home
-      </NavLink>
       <h2>Custom (SASS)</h2>
       <div className="login-box">
         <h2 className="welcome-back">Welcome Back!</h2>

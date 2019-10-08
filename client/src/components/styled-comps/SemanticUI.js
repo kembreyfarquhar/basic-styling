@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "../../styles/semanticui.scss";
 import "../../styles/global.scss";
 import {
@@ -18,9 +17,6 @@ function SemanticUI() {
   return (
     <div className="Main semanticui-container">
       <div className="grid-column">
-        <NavLink className="link" to="/">
-          Back to Home
-        </NavLink>
         <Header as="h1" textAlign="center">
           Semantic-UI Basic
         </Header>
