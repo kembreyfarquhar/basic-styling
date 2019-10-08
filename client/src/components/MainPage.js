@@ -45,25 +45,25 @@ function MainPage() {
         <Mobile
           title="HTML5 Default"
           image={html5}
-          linkTo={"/html5"}
+          linkTo={"/views/html5"}
           alt={"form with no styling"}
         />
         <Mobile
           title="Custom (SASS)"
           image={customsass}
-          linkTo={"/custom-sass"}
+          linkTo={"/views/custom-sass"}
           alt={"form with basic styling"}
         />
         <Mobile
           title="Material-UI"
           image={materialui}
-          linkTo={"/materialui"}
+          linkTo={"/views/materialui"}
           alt={"form styled with material-ui components"}
         />
         <Mobile
           title="Semantic-UI"
           image={semanticui}
-          linkTo={"/semanticui"}
+          linkTo={"/views/semanticui"}
           alt={"form styled with semantic-ui components"}
         />
       </div>
