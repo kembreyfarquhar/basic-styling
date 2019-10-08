@@ -39,7 +39,7 @@ function HTML5() {
       </div>
       <CodeData
         url={
-          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/components/styled-comps/NoStyling.js"
+          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/components/styled-comps/HTML5.js"
         }
       />
     </div>

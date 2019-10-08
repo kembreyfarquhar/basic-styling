@@ -62,10 +62,10 @@ function SemanticUI() {
       </div>
       <CodeData
         url={
-          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/components/styled-comps/SemanticUIBasic.js"
+          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/components/styled-comps/SemanticUI.js"
         }
         styles={
-          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/styles/semanticuibasic.scss"
+          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/styles/semanticui.scss"
         }
       />
     </div>
