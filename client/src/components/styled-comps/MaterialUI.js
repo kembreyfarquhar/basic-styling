@@ -49,10 +49,10 @@ function MaterialUI() {
       </Container>
       <CodeData
         url={
-          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/components/styled-comps/MaterialUIBasic.js"
+          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/components/styled-comps/MaterialUI.js"
         }
         styles={
-          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/styles/materialuibasic.scss"
+          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/styles/materialui.scss"
         }
       />
     </div>

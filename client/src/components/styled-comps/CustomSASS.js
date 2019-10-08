@@ -35,10 +35,10 @@ function CustomSASS() {
       </div>
       <CodeData
         url={
-          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/components/styled-comps/BasicStyling.js"
+          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/components/styled-comps/CustomSASS.js"
         }
         styles={
-          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/styles/basicstyling.scss"
+          "https://raw.githubusercontent.com/kmcknight1/basic-styling/master/client/src/styles/customsass.scss"
         }
       />
     </div>
