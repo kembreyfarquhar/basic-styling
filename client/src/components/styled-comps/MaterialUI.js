@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../../styles/materialuibasic.scss";
+import "../../styles/materialui.scss";
 import "../../styles/global.scss";
 import {
   Container,
@@ -13,14 +13,14 @@ import {
 
 import CodeData from "../CodeData";
 
-function MaterialUIBasic() {
+function MaterialUI() {
   return (
-    <div className="Main materialui-basic-container">
+    <div className="Main materialui-container">
       <NavLink className="link" to="/">
         Back to Home
       </NavLink>
 
-      <h2>Material-UI Basic</h2>
+      <h2>Material-UI</h2>
 
       <Container className="login-box">
         <h2 className="welcome-back">Welcome Back!</h2>
@@ -59,4 +59,4 @@ function MaterialUIBasic() {
   );
 }
 
-export default MaterialUIBasic;
+export default MaterialUI;

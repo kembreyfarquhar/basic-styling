@@ -1,17 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../../styles/basicstyling.scss";
+import "../../styles/customsass.scss";
 import "../../styles/global.scss";
 
 import CodeData from "../CodeData";
 
-function BasicStyling() {
+function CustomSASS() {
   return (
-    <div className="basic-styling-container Main">
+    <div className="custom-sass-container Main">
       <NavLink className="link" to="/">
         Back to Home
       </NavLink>
-      <h2>Basic Styling</h2>
+      <h2>Custom (SASS)</h2>
       <div className="login-box">
         <h2 className="welcome-back">Welcome Back!</h2>
 
@@ -45,4 +45,4 @@ function BasicStyling() {
   );
 }
 
-export default BasicStyling;
+export default CustomSASS;

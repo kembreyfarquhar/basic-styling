@@ -4,14 +4,14 @@ import { Button, Header, Icon, Modal } from "semantic-ui-react";
 import { Tooltip } from "@material-ui/core";
 import "../styles/navigation.scss";
 
-import nostyling from "../images/nostyling.png";
-import basicstyling from "../images/basicstyling.png";
-import materialuibasic from "../images/materialuibasic.png";
-import semanticuibasic from "../images/semanticuibasic.png";
+import html5 from "../images/html5.png";
+import customsass from "../images/customsass.png";
+import materialui from "../images/materialui.png";
+import semanticui from "../images/semanticui.png";
 
-function Navigation() {
+function MainPage() {
   return (
-    <div className="navigation-container">
+    <div className="main-page-container">
       <Modal
         trigger={
           <Tooltip title="How to use this app">
@@ -44,27 +44,27 @@ function Navigation() {
       <div className="mobile-all">
         <Mobile
           title="HTML5 Default"
-          image={nostyling}
-          linkTo={"/no-styling"}
+          image={html5}
+          linkTo={"/html5"}
           alt={"form with no styling"}
         />
         <Mobile
           title="Custom (SASS)"
-          image={basicstyling}
-          linkTo={"/basic-styling"}
+          image={customsass}
+          linkTo={"/custom-sass"}
           alt={"form with basic styling"}
         />
         <Mobile
           title="Material-UI"
-          image={materialuibasic}
-          linkTo={"/materialui-basic"}
-          alt={"form styled with basic material-u-i components"}
+          image={materialui}
+          linkTo={"/materialui"}
+          alt={"form styled with material-ui components"}
         />
         <Mobile
           title="Semantic-UI"
-          image={semanticuibasic}
-          linkTo={"/semanticui-basic"}
-          alt={"form styled with basic semantic-u-i components"}
+          image={semanticui}
+          linkTo={"/semanticui"}
+          alt={"form styled with semantic-ui components"}
         />
       </div>
       <hr />
@@ -101,4 +101,4 @@ function Mobile(props) {
   );
 }
 
-export default Navigation;
+export default MainPage;

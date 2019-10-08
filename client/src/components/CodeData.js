@@ -49,6 +49,7 @@ function CodeData(props) {
           variant="outlined"
           value={jsxStyle}
           onChange={e => setJsxStyle(e.target.value)}
+          className="select"
         >
           <MenuItem value={atomDark}>AtomDark</MenuItem>
           <MenuItem value={okaidia}>Okaidia</MenuItem>
@@ -79,6 +80,7 @@ function CodeData(props) {
             variant="outlined"
             value={sassStyle}
             onChange={e => setSassStyle(e.target.value)}
+            className="select"
           >
             <MenuItem value={atomDark}>AtomDark</MenuItem>
             <MenuItem value={okaidia}>Okaidia</MenuItem>

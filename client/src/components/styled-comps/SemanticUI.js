@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../../styles/semanticuibasic.scss";
+import "../../styles/semanticui.scss";
 import "../../styles/global.scss";
 import {
   Button,
@@ -14,9 +14,9 @@ import {
 
 import CodeData from "../CodeData";
 
-function SemanticUIBasic() {
+function SemanticUI() {
   return (
-    <div className="Main semanticui-basic-container">
+    <div className="Main semanticui-container">
       <div className="grid-column">
         <NavLink className="link" to="/">
           Back to Home
@@ -72,4 +72,4 @@ function SemanticUIBasic() {
   );
 }
 
-export default SemanticUIBasic;
+export default SemanticUI;

@@ -1,13 +1,15 @@
-.semanticui-basic-container {
+.semanticui-container {
   .grid-column {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     .login-box {
       height: 25rem;
       width: 18rem;
       border: 1px solid black;
+      background: white;
 
       .welcome-back {
         background: #f2711c;
