@@ -82,6 +82,7 @@ function NavBar() {
                   <a
                     href="https://www.w3schools.com/react/react_sass.asp"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     click here
                   </a>
@@ -100,7 +101,11 @@ function NavBar() {
                   The purpose of this form is to show some of the basic
                   components available to you straight out of the Material-UI
                   library. To get started using this library in your react app{" "}
-                  <a href="https://material-ui.com/" target="_blank">
+                  <a
+                    href="https://material-ui.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     click here
                   </a>
                   .
@@ -119,7 +124,11 @@ function NavBar() {
                   The purpose of this form is to show some of the basic
                   components available to you straight out of the Semantic-UI
                   library. To get started using this library in your react app{" "}
-                  <a href="https://react.semantic-ui.com/" target="_blank">
+                  <a
+                    href="https://react.semantic-ui.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     click here
                   </a>
                   .

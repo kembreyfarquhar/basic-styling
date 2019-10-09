@@ -70,7 +70,11 @@ function MainPage() {
       <hr />
       <footer>
         Made by
-        <a href="https://github.com/kmcknight1" target="_blank">
+        <a
+          href="https://github.com/kmcknight1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Katie McKnight
         </a>
         September 2019
