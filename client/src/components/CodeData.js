@@ -30,7 +30,7 @@ function CodeData(props) {
         setJsxData(res.data);
       })
       .catch(err => console.log(err));
-  }, []);
+  }, [props.url]);
 
   if (props.styles) {
     axios

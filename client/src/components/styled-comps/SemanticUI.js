@@ -1,15 +1,7 @@
 import React from "react";
 import "../../styles/semanticui.scss";
 import "../../styles/global.scss";
-import {
-  Button,
-  Form,
-  Grid,
-  Header,
-  Image,
-  Message,
-  Segment
-} from "semantic-ui-react";
+import { Button, Form, Header, Segment } from "semantic-ui-react";
 
 import CodeData from "../CodeData";
 
