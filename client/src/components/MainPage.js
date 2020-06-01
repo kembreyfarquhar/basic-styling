@@ -71,11 +71,11 @@ function MainPage() {
       <footer>
         Made by
         <a
-          href="https://github.com/kmcknight1"
+          href="https://github.com/kembreyfarquhar"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Katie McKnight
+          Katie Embrey-Farquhar
         </a>
         September 2019
       </footer>
